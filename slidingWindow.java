@@ -2,20 +2,22 @@ public class slidingWindow {
     static void calcSum(int[] arr, int n, int k)
     {
         int sum =0, start=0, end=0;
+        int maxi = Integer.MIN_VALUE;
         while(end<n){
             sum+=arr[end];
+            maxi = Math.max(maxi,sum);
             if(end-start+1 < k)
             {
                 end++;
             }
             else
             {
-                System.out.print(sum +" ");
                 sum-=arr[start];
                 start++;
                 end++;
             }
         }
+        System.out.println(maxi);
 
     }
 
