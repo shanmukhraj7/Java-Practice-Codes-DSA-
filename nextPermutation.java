@@ -1,6 +1,8 @@
+import java.util.*;
+
 public class nextPermutation {
-    class Solution {
-        void nextPermutation(int[] arr) {
+
+         static void nextPermutationCode(int[] arr) {
             // code here
             int n = arr.length;
             int idx = -1;
@@ -25,16 +27,22 @@ public class nextPermutation {
             reverse(arr,idx+1,n-1);
         }
         
-        private void reverse(int[] arr, int start, int end){
+        private static void reverse(int[] arr, int start, int end){
             while(start < end){
                 swap(arr,start++,end--);
             }
         }
         
-        private void swap(int[] arr, int left, int right){
+        private static void swap(int[] arr, int left, int right){
             int temp = arr[left];
             arr[left] = arr[right];
             arr[right] = temp;
         }
-    }
+
+        public static void main(String[] args) {
+            int[] arr = {2, 4, 1, 7, 5, 0};
+            nextPermutationCode(arr);
+            System.out.println(Arrays.toString(arr));
+        }
+    
 }
