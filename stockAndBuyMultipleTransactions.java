@@ -2,6 +2,10 @@
 // Finding the maximum profit from buying and selling stocks with multiple transactions 
 public class stockAndBuyMultipleTransactions {
     static int maximumProfit(int[] prices) {
+        if(prices == null || prices.length < 2){
+            return 0;
+        }
+
         int res = 0;
 
         for (int i = 1; i < prices.length; i++) {
