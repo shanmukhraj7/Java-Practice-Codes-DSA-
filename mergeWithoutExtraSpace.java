@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class mergeWithoutExtraSpace {
     public static void mergeArrays(int[] a, int[] b) {
         int n = a.length;
