@@ -11,7 +11,7 @@ public class AnagramChecker {
         String str1 = s1.replaceAll("\\s+", " ").toLowerCase();
         String str2 = s2.replaceAll("\\s+"," ").toLowerCase();
 
-        char[] arr1 = str1.toCharArray();
+        char[] arr1 = str1.toCharArray();                           
         char[] arr2 = str2.toCharArray();
         Arrays.sort(arr1);
         Arrays.sort(arr2);
