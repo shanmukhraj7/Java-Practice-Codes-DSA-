@@ -12,7 +12,9 @@ class Solution{
                 res[j] -= prices[i];
             }
             stack.push(i);
+            
         }
         return res;
     }
 }
+
