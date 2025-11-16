@@ -4,7 +4,7 @@ public class MaxAndMinArray {
         int min = findMin(nums);
         int max = findMax(nums);
         System.out.println("Max: "+max);
-        System.out.println("Min: "+min);
+        System.out.println("Min: " +min);
     }
 
     public static int findMin(int[] arr)
